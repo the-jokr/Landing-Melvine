@@ -46,6 +46,9 @@ li {
   height: 5.5rem;
   overflow: hidden;
   position: relative;
+  position: fixed;
+  left: 0;
+  right: 0;
   box-shadow: 0 2px 1px 0 rgba(51, 51, 51, 0.05);
 }
 @media (max-width: 500px) {
@@ -142,6 +145,74 @@ li {
     padding: 1.5rem 1rem;
     border-bottom: 1px solid #d7e9f8;
   }
+}
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+}
+.container {
+  padding-top: 5.5rem;
+}
+.container header {
+  min-height: calc(100vh - 5.5rem);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  background: url("../../images/header-bg.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.container header .welcome {
+  width: 54%;
+  padding: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+.container header .welcome h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 3rem;
+}
+.container header .welcome p {
+  font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+}
+.container header .welcome .btn-group {
+  display: flex;
+}
+.container header .welcome .btn-group > .btn {
+  padding: 1rem 3.5rem;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  border-radius: 2rem;
+  margin-right: 1rem;
+  transition: background 0.3s ease-in-out;
+}
+.container header .welcome .btn-group .explore {
+  background: #2caadc;
+  color: #ffffff;
+}
+.container header .welcome .btn-group .explore:hover {
+  transition: all 0.3s ease-in-out;
+  background: #1e8bb7;
+}
+.container header .welcome .btn-group .login {
+  border: 2px solid #2caadc;
+  color: #2caadc;
+}
+.container header .welcome .btn-group .login:hover {
+  transition: all 0.3s ease-in-out;
+  color: #ffffff;
+  background: #2caadc;
 }
 body {
   background: #edf5fc;
