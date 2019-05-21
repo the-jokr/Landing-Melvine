@@ -35,10 +35,39 @@ li {
 }
 .navbar {
   background: #ffffff;
+  height: 90px;
+  overflow: hidden;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
+}
+.navbar .logo {
+  flex: 2;
+  text-align: center;
+  border: 1px solid red;
+}
+.navbar .nav-menu {
+  flex: 3;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.navbar .nav-menu li {
+  flex: 1;
+  height: 100%;
+}
+.navbar .nav-menu li:hover,
+.navbar .nav-menu li.active {
+  border-bottom: 5px solid #2caadc;
+}
+.navbar .nav-menu li a {
+  font-family: "Montserrat", sans-serif;
+  display: block;
+  padding: 34px;
+  white-space: nowrap;
 }
 body {
   background: #edf5fc;
