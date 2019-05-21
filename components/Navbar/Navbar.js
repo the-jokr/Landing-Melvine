@@ -11,7 +11,6 @@ class NavLink {
 
     this.menuIcon.addEventListener("click", e => {
       e.preventDefault();
-      console.log("test");
       this.toggleNavMenu();
     });
   }
