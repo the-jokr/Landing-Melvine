@@ -45,10 +45,27 @@ li {
   background: #ffffff;
   height: 90px;
   overflow: hidden;
+  position: relative;
   box-shadow: 0 2px 1px 0 rgba(51, 51, 51, 0.05);
 }
 @media (max-width: 500px) {
   .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+}
+.navbar .menu-icon {
+  position: absolute;
+  display: none;
+}
+@media (max-width: 500px) {
+  .navbar .menu-icon {
+    display: block;
+    font-size: 2rem;
+    right: 1rem;
+    top: 2rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
