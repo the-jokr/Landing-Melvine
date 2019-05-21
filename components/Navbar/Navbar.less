@@ -45,11 +45,17 @@
     .flex(row, center, center);
     height: 100%;
 
+    &.open {
+      max-height: 400px;
+      transition: all 0.35s ease-in-out;
+    }
+
     @media @mobile {
-      max-height: auto;
+      max-height: 0px;
       overflow: hidden;
       width: 100%;
       .flex(column, flex-start, center);
+      transition: all 0.35s ease-in-out;
     }
 
     li {
