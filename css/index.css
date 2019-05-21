@@ -1,3 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+:root {
+  font-size: 100%;
+}
+body,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+  padding: 0px;
+}
+li {
+  list-style-type: none;
+}
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
@@ -11,6 +35,113 @@
   font-weight: 400;
   font-display: swap;
   src: local('Poppins Regular'), local('Poppins-Regular'), url(https://fonts.gstatic.com/s/poppins/v6/pxiEyp8kv8JHgFVrJJfedw.ttf) format('truetype');
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 100%;
+  background: #ffffff;
+  height: 5.5rem;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 2px 1px 0 rgba(51, 51, 51, 0.05);
+}
+@media (max-width: 500px) {
+  .navbar {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+}
+.navbar .menu-icon {
+  position: absolute;
+  display: none;
+}
+@media (max-width: 500px) {
+  .navbar .menu-icon {
+    display: block;
+    font-size: 2rem;
+    right: 1rem;
+    top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+}
+.navbar .logo {
+  flex: 1;
+  text-align: left;
+  height: inherit;
+  padding: 1.5rem 3rem;
+}
+@media (max-width: 500px) {
+  .navbar .logo {
+    padding: 1.5rem;
+  }
+}
+.navbar .logo h1 {
+  font-family: "Poppins", sans-serif;
+}
+.navbar .nav-menu {
+  flex: 2;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.navbar .nav-menu.open {
+  max-height: 400px;
+  transition: all 0.35s ease-in-out;
+}
+@media (max-width: 500px) {
+  .navbar .nav-menu {
+    max-height: 0px;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    transition: all 0.35s ease-in-out;
+  }
+}
+.navbar .nav-menu li {
+  flex: 1;
+  height: 100%;
+}
+@media (max-width: 500px) {
+  .navbar .nav-menu li {
+    width: 100%;
+  }
+}
+.navbar .nav-menu li:hover,
+.navbar .nav-menu li.active {
+  border-bottom: 0.35rem solid #2caadc;
+  background: #ffffff;
+}
+@media (max-width: 500px) {
+  .navbar .nav-menu li:first-child {
+    border-top: 1px solid #d7e9f8;
+  }
+}
+.navbar .nav-menu li a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1rem;
+  display: block;
+  padding: 2.5rem 2rem;
+  white-space: nowrap;
+}
+@media (max-width: 500px) {
+  .navbar .nav-menu li a {
+    padding: 1.5rem 1rem;
+    border-bottom: 1px solid #d7e9f8;
+  }
 }
 body {
   background: #edf5fc;

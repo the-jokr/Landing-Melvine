@@ -1,0 +1,95 @@
+.navbar {
+  .flex(row, center, space-around);
+  max-width: 100%;
+  background: @white;
+  height: 5.5rem;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 2px 1px 0 rgba(51, 51, 51, 0.05);
+
+  @media @mobile {
+    height: auto;
+    .flex(column, flex-start, center);
+  }
+
+  .menu-icon {
+    position: absolute;
+    display: none;
+
+    @media @mobile {
+      display: block;
+      font-size: 2rem;
+      right: 1rem;
+      top: 2rem;
+      .flex(column, flex-start, center);
+    }
+  }
+
+  .logo {
+    flex: 1;
+    text-align: left;
+    height: inherit;
+    padding: 1.5rem 3rem;
+
+    @media @mobile {
+      padding: 1.5rem;
+    }
+
+    h1 {
+      font-family: @titlesFont;
+    }
+  }
+
+  .nav-menu {
+    flex: 2;
+    .flex(row, center, center);
+    height: 100%;
+
+    &.open {
+      max-height: 400px;
+      transition: all 0.35s ease-in-out;
+    }
+
+    @media @mobile {
+      max-height: 0px;
+      overflow: hidden;
+      width: 100%;
+      .flex(column, flex-start, center);
+      transition: all 0.35s ease-in-out;
+    }
+
+    li {
+      flex: 1;
+      height: 100%;
+
+      @media @mobile {
+        width: 100%;
+      }
+
+      &:hover,
+      &.active {
+        border-bottom: 0.35rem solid @primaryBlue;
+        background: lighten(@lightBlue, 10%);
+      }
+
+      @media @mobile {
+        &:first-child {
+          border-top: 1px solid darken(@lightBlue, 5%);
+        }
+      }
+
+      a {
+        font-family: @primaryFont;
+        font-size: 1.1rem;
+        display: block;
+        padding: 2.5rem 2rem;
+        white-space: nowrap;
+
+        @media @mobile {
+          padding: 1.5rem 1rem;
+          border-bottom: 1px solid darken(@lightBlue, 5%);
+        }
+      }
+    }
+  }
+}

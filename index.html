@@ -3,6 +3,10 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Font Awesome -->
+        <link rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+
         <!-- CSS Styles -->
         <link rel="stylesheet" href="css/index.css">
 
@@ -10,19 +14,21 @@
     </head>
     <body>
 
-        <div>
+        <div class="navbar">
             <div class="logo">
-                <h1>The-Jokr</h1>
+                <h1>TheJokr</h1>
             </div>
-            <nav>
+            <i class="fas fa-bars menu-icon"></i>
+            <nav class="nav-menu">
                 <li><a href="#">How it works</a></li>
                 <li><a href="#">Features</a></li>
                 <li><a href="#">Samples</a></li>
                 <li><a href="#">Reviews</a></li>
-                <li><a href="#">Login</a></li>
+                <li><a class="login" href="#">Login</a></li>
             </nav>
         </div>
 
-
+        <!-- Scripts -->
+        <script src="./components/Navbar/Navbar.js"></script>
     </body>
 </html>
