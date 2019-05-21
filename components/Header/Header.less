@@ -11,65 +11,73 @@
   border-radius: 0.25rem;
 }
 
-.container {
-  padding-top: 5.5rem;
-  header {
-    min-height: calc(100vh - 5.5rem);
-    .flex(row, center, flex-start);
-    background: url("../../images/header-bg.jpg");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100%;
+header {
+  min-height: calc(100vh - 5.5rem);
+  .flex(row, center, flex-start);
+  background: url("../../images/header-bg.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
 
-    .welcome {
-      width: 54%;
-      padding: 20px;
+  .welcome {
+    width: 54%;
+    padding: 20px;
+    font-family: @primaryFont;
+
+    h1 {
+      font-family: @titlesFont;
+      font-size: 3rem;
+    }
+
+    p {
+      font-size: 1.5rem;
       font-family: @primaryFont;
+    }
 
-      h1 {
-        font-family: @titlesFont;
-        font-size: 3rem;
+    .btn-group {
+      display: flex;
+
+      & > .btn {
+        padding: 1rem 3.5rem;
+        font-size: 1.1rem;
+        line-height: 1.7;
+        border-radius: 2rem;
+        margin-right: 1rem;
+        transition: background 0.3s ease-in-out;
       }
 
-      p {
-        font-size: 1.5rem;
-        font-family: @primaryFont;
-      }
+      .explore {
+        background: @primaryBlue;
+        color: @white;
 
-      .btn-group {
-        display: flex;
-
-        & > .btn {
-          padding: 1rem 3.5rem;
-          font-size: 1.1rem;
-          line-height: 1.7;
-          border-radius: 2rem;
-          margin-right: 1rem;
-          transition: background 0.3s ease-in-out;
+        &:hover {
+          transition: all 0.3s ease-in-out;
+          background: darken(@primaryBlue, 10%);
         }
+      }
 
-        .explore {
-          background: @primaryBlue;
+      .login {
+        border: 2px solid @primaryBlue;
+        color: @primaryBlue;
+
+        &:hover {
+          transition: all 0.3s ease-in-out;
           color: @white;
-
-          &:hover {
-            transition: all 0.3s ease-in-out;
-            background: darken(@primaryBlue, 10%);
-          }
-        }
-
-        .login {
-          border: 2px solid @primaryBlue;
-          color: @primaryBlue;
-
-          &:hover {
-            transition: all 0.3s ease-in-out;
-            color: @white;
-            background: @primaryBlue;
-          }
+          background: @primaryBlue;
         }
       }
     }
+  }
+}
+// end navbar
+
+.features {
+  min-height: 800px;
+  border: 1px solid red;
+
+  .section-header {
+    text-align: center;
+    padding-top: 4rem;
   }
 }
