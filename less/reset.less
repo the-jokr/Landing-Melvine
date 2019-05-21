@@ -11,7 +11,10 @@ a {
   font-size: 100%;
 }
 body,
-ul,
+ul {
+  .resetBoxModel();
+}
+
 h1,
 h2,
 h3,
@@ -19,6 +22,7 @@ h4,
 h5,
 h6 {
   .resetBoxModel();
+  font-family: @titlesFont;
 }
 
 li {
