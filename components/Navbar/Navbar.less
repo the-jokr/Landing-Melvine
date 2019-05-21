@@ -2,12 +2,13 @@
   .flex(row, center, space-around);
   max-width: 100%;
   background: @white;
-  height: 90px;
+  height: 5.5rem;
   overflow: hidden;
   position: relative;
   box-shadow: 0 2px 1px 0 rgba(51, 51, 51, 0.05);
 
   @media @mobile {
+    height: auto;
     .flex(column, flex-start, center);
   }
 
@@ -43,14 +44,32 @@
     flex: 2;
     .flex(row, center, center);
     height: 100%;
+
+    @media @mobile {
+      max-height: auto;
+      overflow: hidden;
+      width: 100%;
+      .flex(column, flex-start, center);
+    }
+
     li {
       flex: 1;
       height: 100%;
+
+      @media @mobile {
+        width: 100%;
+      }
 
       &:hover,
       &.active {
         border-bottom: 0.35rem solid @primaryBlue;
         background: lighten(@lightBlue, 10%);
+      }
+
+      @media @mobile {
+        &:first-child {
+          border-top: 1px solid darken(@lightBlue, 5%);
+        }
       }
 
       a {
@@ -59,6 +78,11 @@
         display: block;
         padding: 2.5rem 2rem;
         white-space: nowrap;
+
+        @media @mobile {
+          padding: 1.5rem 1rem;
+          border-bottom: 1px solid darken(@lightBlue, 5%);
+        }
       }
     }
   }
