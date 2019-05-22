@@ -41,11 +41,11 @@ class Carousel {
 
   prevSlide() {
     if (this.currentIndex === 0) {
-      this.currentIndex = 0;
+      this.currentIndex = this.slides.length - 1;
     } else {
       this.currentIndex -= 1;
     }
-    this.setCurrentSlide(); 
+    this.setCurrentSlide();
   }
 }
 
