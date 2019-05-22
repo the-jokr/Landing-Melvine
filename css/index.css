@@ -42,7 +42,7 @@ li {
 }
 .section-id {
   position: absolute;
-  bottom: 10.5rem;
+  bottom: 9rem;
   opacity: 0;
 }
 .section-header {
@@ -72,6 +72,7 @@ li {
   left: 0;
   right: 0;
   box-shadow: 0 2px 1px 0 rgba(51, 51, 51, 0.05);
+  z-index: 10;
 }
 @media (max-width: 500px) {
   .navbar {
@@ -282,7 +283,8 @@ header .welcome .btn-group .login:hover {
 }
 .features {
   min-height: 700px;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
+  position: relative;
 }
 .features .features-wrapper {
   max-width: 90%;
@@ -388,6 +390,91 @@ header .welcome .btn-group .login:hover {
   padding: 2rem;
   font-family: "Montserrat", sans-serif;
   background: #232222;
+}
+.samples .samples-wrapper {
+  width: 90%;
+  margin: 3rem auto 0rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.samples .samples-wrapper .sample {
+  flex: 1;
+  max-width: 30%;
+  position: relative;
+  margin: 0.4rem auto 0.4rem;
+  font-family: "Montserrat", sans-serif;
+}
+.samples .samples-wrapper .sample p {
+  font-size: 2rem;
+}
+.samples .samples-wrapper .sample p:hover {
+  cursor: default;
+}
+.samples .samples-wrapper .sample > .front,
+.samples .samples-wrapper .sample > .back {
+  color: white;
+  height: 320px;
+  padding: 1em 2em;
+  background: #2caadc;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.samples .samples-wrapper .sample .front,
+.samples .samples-wrapper .sample .back {
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition-duration: 1s;
+  transition-property: transform, opacity;
+}
+.samples .samples-wrapper .sample .front {
+  transform: rotateY(0deg);
+}
+.samples .samples-wrapper .sample .back {
+  position: absolute;
+  opacity: 0;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  transform: rotateY(-180deg);
+  background: #302f2f;
+}
+.samples .samples-wrapper .sample:hover .front {
+  transform: rotateY(180deg);
+}
+.samples .samples-wrapper .sample:hover .back {
+  opacity: 1;
+  transform: rotateY(0deg);
+}
+.samples .samples-wrapper .sample.sample-vertical > .back {
+  transform: rotateX(-180deg);
+}
+.samples .samples-wrapper .sample.sample-vertical:hover > .front {
+  transform: rotateX(180deg);
+}
+.samples .samples-wrapper .sample.sample-vertical:hover > .back {
+  transform: rotateX(0deg);
+}
+.samples .view-more-jokes {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+}
+.samples .view-more-jokes a {
+  border: 1px solid #919191;
+  font-family: "Montserrat", sans-serif;
+  color: #919191;
+}
+.samples .view-more-jokes a:hover {
+  border: 1px solid #111111;
+  font-family: "Montserrat", sans-serif;
+  color: #111111;
 }
 body {
   background: #edf5fc;
