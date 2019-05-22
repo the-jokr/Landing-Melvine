@@ -4,13 +4,11 @@ class NavLink {
     this.navMenu = document.querySelector(".nav-menu");
     this.menuIcon = document.querySelector(".menu-icon");
 
-    this.link.addEventListener("click", e => {
-      e.preventDefault();
+    this.link.addEventListener("click", () => {
       this.select();
     });
 
-    this.menuIcon.addEventListener("click", e => {
-      e.preventDefault();
+    this.menuIcon.addEventListener("click", () => {
       this.toggleNavMenu();
     });
   }

@@ -9,7 +9,10 @@ a {
   font-size: 100%;
 }
 body,
-ul,
+ul {
+  margin: 0px;
+  padding: 0px;
+}
 h1,
 h2,
 h3,
@@ -18,6 +21,7 @@ h5,
 h6 {
   margin: 0px;
   padding: 0px;
+  font-family: "Poppins", sans-serif;
 }
 li {
   list-style-type: none;
@@ -35,6 +39,11 @@ li {
   font-weight: 400;
   font-display: swap;
   src: local('Poppins Regular'), local('Poppins-Regular'), url(https://fonts.gstatic.com/s/poppins/v6/pxiEyp8kv8JHgFVrJJfedw.ttf) format('truetype');
+}
+.section-id {
+  position: absolute;
+  bottom: 10.5rem;
+  opacity: 0;
 }
 .navbar {
   display: flex;
@@ -158,10 +167,7 @@ li {
   line-height: 1.5;
   border-radius: 0.25rem;
 }
-.container {
-  padding-top: 5.5rem;
-}
-.container header {
+header {
   min-height: calc(100vh - 5.5rem);
   display: flex;
   flex-direction: row;
@@ -173,23 +179,23 @@ li {
   background-repeat: no-repeat;
   background-size: 100%;
 }
-.container header .welcome {
+header .welcome {
   width: 54%;
   padding: 20px;
   font-family: "Montserrat", sans-serif;
 }
-.container header .welcome h1 {
+header .welcome h1 {
   font-family: "Poppins", sans-serif;
   font-size: 3rem;
 }
-.container header .welcome p {
+header .welcome p {
   font-size: 1.5rem;
   font-family: "Montserrat", sans-serif;
 }
-.container header .welcome .btn-group {
+header .welcome .btn-group {
   display: flex;
 }
-.container header .welcome .btn-group > .btn {
+header .welcome .btn-group > .btn {
   padding: 1rem 3.5rem;
   font-size: 1.1rem;
   line-height: 1.7;
@@ -197,22 +203,82 @@ li {
   margin-right: 1rem;
   transition: background 0.3s ease-in-out;
 }
-.container header .welcome .btn-group .explore {
+header .welcome .btn-group .explore {
   background: #2caadc;
   color: #ffffff;
 }
-.container header .welcome .btn-group .explore:hover {
+header .welcome .btn-group .explore:hover {
   transition: all 0.3s ease-in-out;
   background: #1e8bb7;
 }
-.container header .welcome .btn-group .login {
+header .welcome .btn-group .login {
   border: 2px solid #2caadc;
   color: #2caadc;
 }
-.container header .welcome .btn-group .login:hover {
+header .welcome .btn-group .login:hover {
   transition: all 0.3s ease-in-out;
   color: #ffffff;
   background: #2caadc;
+}
+.features {
+  min-height: 800px;
+}
+.features .section-header {
+  text-align: center;
+  padding-top: 4rem;
+}
+.features .section-header h2 {
+  font-size: 3rem;
+  font-family: "Poppins", sans-serif;
+}
+.features .section-header p {
+  color: #919191;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3rem;
+}
+.features .features-wrapper {
+  max-width: 90%;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 500px) {
+  .features .features-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+}
+.features .features-wrapper .feature {
+  flex: 1;
+  margin: 5px 10px 5px;
+  padding: 1rem;
+  background: #ffffff;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 1px 0 rgba(51, 51, 51, 0.05);
+  font-family: "Montserrat", sans-serif;
+  min-height: 360px;
+}
+@media (max-width: 500px) {
+  .features .features-wrapper .feature {
+    width: 100%;
+  }
+}
+.features .features-wrapper .feature h2 {
+  text-align: center;
+  color: #787878;
+  font-family: "Poppins", sans-serif;
+}
+.features .features-wrapper .feature .img {
+  text-align: center;
+}
+.features .features-wrapper .feature .img img {
+  width: 8rem;
+  height: 12rem;
 }
 body {
   background: #edf5fc;
