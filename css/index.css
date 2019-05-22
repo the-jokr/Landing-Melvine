@@ -287,7 +287,7 @@ header .welcome .btn-group .login:hover {
 }
 .features {
   min-height: 700px;
-  padding-bottom: 1rem;
+  padding-bottom: 3rem;
   position: relative;
 }
 .features .features-wrapper {
@@ -395,6 +395,11 @@ header .welcome .btn-group .login:hover {
   font-family: "Montserrat", sans-serif;
   background: #232222;
 }
+.samples {
+  min-height: 700px;
+  padding-bottom: 1rem;
+  position: relative;
+}
 .samples .samples-wrapper {
   width: 90%;
   margin: 3rem auto 0rem;
@@ -492,6 +497,10 @@ header .welcome .btn-group .login:hover {
   border: 1px solid #111111;
   font-family: "Montserrat", sans-serif;
   color: #111111;
+}
+.reviews {
+  min-height: 700px;
+  padding-bottom: 1rem;
 }
 .reviews .reviews-wrapper {
   position: relative;
