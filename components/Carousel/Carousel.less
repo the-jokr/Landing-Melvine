@@ -1,7 +1,6 @@
 .reviews {
   .reviews-wrapper {
     position: relative;
-    border: 1px solid blue;
 
     &:hover .prev,
     &:hover .next {
@@ -16,6 +15,7 @@
       font-size: 2.5rem;
       opacity: 0.3;
       transition: all 0.25s ease-in-out;
+      cursor: pointer;
     }
 
     .next {
@@ -32,6 +32,7 @@
     border: 1px solid @lightBlue;
     background: @white;
     position: relative;
+    overflow: hidden;
 
     .slide {
       position: absolute;
@@ -39,13 +40,35 @@
       top: 0px;
       right: 0px;
       bottom: 0px;
-      border: 1px solid red;    
       opacity: 0;
       .flex(row, center, center);
 
-      
+      .user-info {
+        flex: 1;
+        height: 100%;
+        .flex(column, center, center);
 
+        h3 {
+          margin-top: 1rem;
+        }
 
+        img {
+          height: 150px;
+          width: 150px;
+          border-radius: 50%;
+        }
+      }
+      .says {
+        flex: 2;
+        height: 100%;
+        .flex(column, center, center);
+        padding: 2rem;
+
+        p {
+          font-family: @primaryFont;
+          font-size: 2rem;
+        }
+      }
       &.show {
         opacity: 1;
       }

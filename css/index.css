@@ -495,7 +495,6 @@ header .welcome .btn-group .login:hover {
 }
 .reviews .reviews-wrapper {
   position: relative;
-  border: 1px solid blue;
 }
 .reviews .reviews-wrapper:hover .prev,
 .reviews .reviews-wrapper:hover .next {
@@ -509,6 +508,7 @@ header .welcome .btn-group .login:hover {
   font-size: 2.5rem;
   opacity: 0.3;
   transition: all 0.25s ease-in-out;
+  cursor: pointer;
 }
 .reviews .reviews-wrapper .next {
   right: 6.5rem;
@@ -523,6 +523,7 @@ header .welcome .btn-group .login:hover {
   border: 1px solid #edf5fc;
   background: #ffffff;
   position: relative;
+  overflow: hidden;
 }
 .reviews .carousel .slide {
   position: absolute;
@@ -530,8 +531,40 @@ header .welcome .btn-group .login:hover {
   top: 0px;
   right: 0px;
   bottom: 0px;
-  border: 1px solid red;
   opacity: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.reviews .carousel .slide .user-info {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.reviews .carousel .slide .user-info h3 {
+  margin-top: 1rem;
+}
+.reviews .carousel .slide .user-info img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+.reviews .carousel .slide .says {
+  flex: 2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+.reviews .carousel .slide .says p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
 }
 .reviews .carousel .slide.show {
   opacity: 1;

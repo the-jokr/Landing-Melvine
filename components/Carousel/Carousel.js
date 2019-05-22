@@ -2,7 +2,7 @@ class Carousel {
   constructor(element) {
     this.element = element;
     this.slides = this.element.querySelectorAll(".slide");
-    this.currentIndex = 0;
+    this.currentIndex = 1;
 
     this.deselect();
     this.setCurrentSlide();
