@@ -353,6 +353,11 @@ header .welcome .btn-group .login:hover {
   align-items: center;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  .footer .top-section .social-links {
+    width: 100%;
+  }
+}
 .footer .top-section .social-links .link {
   display: flex;
   flex-direction: row;
@@ -366,6 +371,7 @@ header .welcome .btn-group .login:hover {
   text-align: center;
   color: #919191;
   border: 1px solid #919191;
+  transition: all 0.35s ease-in-out;
 }
 .footer .top-section .social-links .link:hover {
   color: #ffffff;
