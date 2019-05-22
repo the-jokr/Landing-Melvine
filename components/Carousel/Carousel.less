@@ -1,0 +1,105 @@
+.reviews {
+  min-height: 700px;
+  padding-bottom: 1rem;
+  .reviews-wrapper {
+    position: relative;
+
+    &:hover .prev,
+    &:hover .next {
+      opacity: 1;
+      transition: all 0.5s ease-in-out;
+    }
+
+    .next,
+    .prev {
+      position: absolute;
+      top: 50%;
+      font-size: 2.5rem;
+      opacity: 0.3;
+      transition: all 0.25s ease-in-out;
+      cursor: pointer;
+      z-index: 3;
+
+      @media @mobile {
+        opacity: 1;
+        bottom: 2rem;
+      }
+    }
+
+    .next {
+      right: 6.5rem;
+      @media @mobile {
+        right: 0.5rem;
+        bottom: 0.3rem;
+        top: unset;
+      }
+    }
+    .prev {
+      left: 6.5rem;
+      @media @mobile {
+        left: 0.5rem;
+        bottom: 0.3rem;
+        top: unset;
+      }
+    }
+  }
+  .carousel {
+    margin: 2rem auto 3rem;
+    height: 25rem;
+    width: 60%;
+    border: 1px solid @lightBlue;
+    background: @white;
+    position: relative;
+    overflow: hidden;
+
+    @media @mobile {
+      width: 98%;
+    }
+
+    .slide {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      opacity: 0;
+      .flex(row, center, center);
+      transition: all 0.4s ease-in-out;
+
+      .user-info {
+        flex: 1;
+        height: 100%;
+        .flex(column, center, center);
+
+        h3 {
+          margin-top: 1rem;
+        }
+
+        img {
+          height: 150px;
+          width: 150px;
+          border-radius: 50%;
+        }
+      }
+      .says {
+        flex: 2;
+        height: 100%;
+        .flex(column, center, center);
+        padding: 2rem;
+
+        p {
+          font-family: @primaryFont;
+          font-size: 2rem;
+
+          @media @mobile {
+            font-size: 1.2rem;
+          }
+        }
+      }
+      &.show {
+        opacity: 1;
+        transition: all 0.4s ease-in-out;
+      }
+    }
+  }
+}
