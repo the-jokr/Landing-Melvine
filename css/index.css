@@ -40,6 +40,10 @@ li {
   font-display: swap;
   src: local('Poppins Regular'), local('Poppins-Regular'), url(https://fonts.gstatic.com/s/poppins/v6/pxiEyp8kv8JHgFVrJJfedw.ttf) format('truetype');
 }
+html {
+  background: #edf5fc;
+  scroll-behavior: smooth;
+}
 .section-id {
   position: absolute;
   bottom: 9rem;
@@ -488,6 +492,13 @@ header .welcome .btn-group .login:hover {
   border: 1px solid #111111;
   font-family: "Montserrat", sans-serif;
   color: #111111;
+}
+.reviews .carousel {
+  margin: 2rem auto 3rem;
+  min-height: 25rem;
+  width: 60%;
+  border: 1px solid #edf5fc;
+  background: #ffffff;
 }
 body {
   background: #edf5fc;
