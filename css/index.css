@@ -222,11 +222,63 @@ header .welcome .btn-group .login:hover {
 }
 .features {
   min-height: 800px;
-  border: 1px solid red;
 }
 .features .section-header {
   text-align: center;
   padding-top: 4rem;
+}
+.features .section-header h2 {
+  font-size: 3rem;
+  font-family: "Poppins", sans-serif;
+}
+.features .section-header p {
+  color: #919191;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3rem;
+}
+.features .features-wrapper {
+  max-width: 90%;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 500px) {
+  .features .features-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+}
+.features .features-wrapper .feature {
+  flex: 1;
+  margin: 5px 10px 5px;
+  padding: 1rem;
+  background: #ffffff;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 1px 0 rgba(51, 51, 51, 0.05);
+  font-family: "Montserrat", sans-serif;
+  min-height: 360px;
+}
+@media (max-width: 500px) {
+  .features .features-wrapper .feature {
+    width: 100%;
+  }
+}
+.features .features-wrapper .feature h2 {
+  text-align: center;
+  color: #787878;
+  font-family: "Poppins", sans-serif;
+}
+.features .features-wrapper .feature .img {
+  text-align: center;
+}
+.features .features-wrapper .feature .img img {
+  width: 8rem;
+  height: 12rem;
 }
 body {
   background: #edf5fc;

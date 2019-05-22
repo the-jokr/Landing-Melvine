@@ -1,0 +1,58 @@
+.features {
+  min-height: 800px;
+
+  .section-header {
+    text-align: center;
+    padding-top: 4rem;
+
+    h2 {
+      font-size: 3rem;
+      font-family: @titlesFont;
+    }
+
+    p {
+      color: #919191;
+      font-family: @primaryFont;
+      font-size: 1.3rem;
+    }
+  }
+  .features-wrapper {
+    max-width: 90%;
+    margin: 0px auto;
+    .flex(row, center, center);
+
+    @media @mobile {
+      .flex(column, center, center);
+      width: 100%;
+    }
+
+    .feature {
+      flex: 1;
+      margin: 5px 10px 5px;
+      padding: 1rem;
+      background: @white;
+      border-radius: 0.5rem;
+      box-shadow: 0 2px 1px 0 rgba(51, 51, 51, 0.05);
+      font-family: @primaryFont;
+      min-height: 360px;
+
+      @media @mobile {
+        width: 100%;
+      }
+
+      h2 {
+        text-align: center;
+        color: darken(@grayTextColor, 10%);
+        font-family: @titlesFont;
+      }
+
+      .img {
+        text-align: center;
+        img {
+          width: 8rem;
+          height: 12rem;
+        }
+      }
+    }
+  }
+}
