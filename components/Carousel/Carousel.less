@@ -1,9 +1,54 @@
 .reviews {
+  .reviews-wrapper {
+    position: relative;
+    border: 1px solid blue;
+
+    &:hover .prev,
+    &:hover .next {
+      opacity: 1;
+      transition: all 0.5s ease-in-out;
+    }
+
+    .next,
+    .prev {
+      position: absolute;
+      top: 50%;
+      font-size: 2.5rem;
+      opacity: 0.3;
+      transition: all 0.25s ease-in-out;
+    }
+
+    .next {
+      right: 6.5rem;
+    }
+    .prev {
+      left: 6.5rem;
+    }
+  }
   .carousel {
     margin: 2rem auto 3rem;
-    min-height: 25rem;
+    height: 25rem;
     width: 60%;
     border: 1px solid @lightBlue;
     background: @white;
+    position: relative;
+
+    .slide {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      border: 1px solid red;    
+      opacity: 0;
+      .flex(row, center, center);
+
+      
+
+
+      &.show {
+        opacity: 1;
+      }
+    }
   }
 }
