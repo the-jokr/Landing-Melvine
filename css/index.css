@@ -327,6 +327,9 @@ header .welcome .btn-group .login:hover {
   width: 8rem;
   height: 12rem;
 }
+.footer {
+  background: gray;
+}
 body {
   background: #edf5fc;
 }
