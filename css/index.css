@@ -327,6 +327,67 @@ header .welcome .btn-group .login:hover {
   width: 8rem;
   height: 12rem;
 }
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #302f2f;
+  color: #919191;
+}
+.footer .top-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  color: #edf5fc;
+  padding: 1rem 0rem 1rem 0rem;
+  color: #919191;
+}
+.footer .top-section .social-links {
+  width: 50%;
+  padding: 1rem 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 500px) {
+  .footer .top-section .social-links {
+    width: 100%;
+  }
+}
+.footer .top-section .social-links .link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  margin: 0rem 0.3rem;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 2rem;
+  text-align: center;
+  color: #919191;
+  border: 1px solid #919191;
+  transition: all 0.35s ease-in-out;
+}
+.footer .top-section .social-links .link:hover {
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  transition: all 0.35s ease-in-out;
+}
+.footer .bottom-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 2rem;
+  font-family: "Montserrat", sans-serif;
+  background: #232222;
+}
 body {
   background: #edf5fc;
 }
