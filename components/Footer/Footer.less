@@ -1,9 +1,45 @@
 .footer {
-  background: gray;
-  color: white;
+  .flex(column, center, center);
+  background: @darkFooterColor;
+  color: @grayTextColor;
 
-  p {
-    margin: 0px;
-    padding: 0px;
+  .top-section {
+    .flex(column, center, center);
+    width: 100%;
+    color: @lightBlue;
+    padding: 1rem 0rem 1rem 0rem;
+    color: @grayTextColor;
+
+    .social-links {
+      width: 50%;
+      padding: 1rem 1rem;
+      .flex(row, center, center);
+
+      .link {
+        .flex(row, center, center);
+        font-size: 2rem;
+        margin: 0rem 0.3rem;
+        height: 4rem;
+        width: 4rem;
+        border-radius: 2rem;
+        text-align: center;
+        color: @grayTextColor;
+        border: 1px solid @grayTextColor;
+        transition: all 0.35s ease-in-out;
+
+        &:hover {
+          color: @white;
+          border: 1px solid @white;
+          transition: all 0.35s ease-in-out;
+        }
+      }
+    }
+  }
+  .bottom-section {
+    .flex(row, center, center);
+    width: 100%;
+    padding: 2rem;
+    font-family: @primaryFont;
+    background: darken(@darkFooterColor, 5%);
   }
 }
