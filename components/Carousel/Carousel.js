@@ -45,7 +45,7 @@ class Carousel {
     } else {
       this.currentIndex -= 1;
     }
-    this.setCurrentSlide();
+    this.setCurrentSlide(); 
   }
 }
 

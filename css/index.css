@@ -509,12 +509,34 @@ header .welcome .btn-group .login:hover {
   opacity: 0.3;
   transition: all 0.25s ease-in-out;
   cursor: pointer;
+  z-index: 3;
+}
+@media (max-width: 500px) {
+  .reviews .reviews-wrapper .next,
+  .reviews .reviews-wrapper .prev {
+    opacity: 1;
+    bottom: 2rem;
+  }
 }
 .reviews .reviews-wrapper .next {
   right: 6.5rem;
 }
+@media (max-width: 500px) {
+  .reviews .reviews-wrapper .next {
+    right: 0.5rem;
+    bottom: 0.3rem;
+    top: unset;
+  }
+}
 .reviews .reviews-wrapper .prev {
   left: 6.5rem;
+}
+@media (max-width: 500px) {
+  .reviews .reviews-wrapper .prev {
+    left: 0.5rem;
+    bottom: 0.3rem;
+    top: unset;
+  }
 }
 .reviews .carousel {
   margin: 2rem auto 3rem;
@@ -524,6 +546,11 @@ header .welcome .btn-group .login:hover {
   background: #ffffff;
   position: relative;
   overflow: hidden;
+}
+@media (max-width: 500px) {
+  .reviews .carousel {
+    width: 98%;
+  }
 }
 .reviews .carousel .slide {
   position: absolute;
@@ -566,6 +593,11 @@ header .welcome .btn-group .login:hover {
 .reviews .carousel .slide .says p {
   font-family: "Montserrat", sans-serif;
   font-size: 2rem;
+}
+@media (max-width: 500px) {
+  .reviews .carousel .slide .says p {
+    font-size: 1.2rem;
+  }
 }
 .reviews .carousel .slide.show {
   opacity: 1;

@@ -16,13 +16,29 @@
       opacity: 0.3;
       transition: all 0.25s ease-in-out;
       cursor: pointer;
+      z-index: 3;
+
+      @media @mobile {
+        opacity: 1;
+        bottom: 2rem;
+      }
     }
 
     .next {
       right: 6.5rem;
+      @media @mobile {
+        right: 0.5rem;
+        bottom: 0.3rem;
+        top: unset;
+      }
     }
     .prev {
       left: 6.5rem;
+      @media @mobile {
+        left: 0.5rem;
+        bottom: 0.3rem;
+        top: unset;
+      }
     }
   }
   .carousel {
@@ -33,6 +49,10 @@
     background: @white;
     position: relative;
     overflow: hidden;
+
+    @media @mobile {
+      width: 98%;
+    }
 
     .slide {
       position: absolute;
@@ -68,6 +88,10 @@
         p {
           font-family: @primaryFont;
           font-size: 2rem;
+
+          @media @mobile {
+            font-size: 1.2rem;
+          }
         }
       }
       &.show {
