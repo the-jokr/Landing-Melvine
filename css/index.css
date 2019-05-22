@@ -536,6 +536,7 @@ header .welcome .btn-group .login:hover {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  transition: all 0.4s ease-in-out;
 }
 .reviews .carousel .slide .user-info {
   flex: 1;
@@ -568,6 +569,7 @@ header .welcome .btn-group .login:hover {
 }
 .reviews .carousel .slide.show {
   opacity: 1;
+  transition: all 0.4s ease-in-out;
 }
 body {
   background: #edf5fc;
