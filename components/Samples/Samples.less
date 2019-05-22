@@ -4,12 +4,20 @@
     margin: 3rem auto 0rem;
     .flex(row, center, center);
 
+    @media @mobile {
+      .flex(column, center, center);
+    }
+
     .sample {
       flex: 1;
       max-width: 30%;
       position: relative;
       margin: 0.4rem auto 0.4rem;
       font-family: @primaryFont;
+
+      @media @mobile {
+        max-width: 100%;
+      }
 
       p {
         font-size: 2rem;
