@@ -21,6 +21,7 @@
     margin: 5rem auto;
     h1 {
       text-align: center;
+      margin: 2rem auto 2rem;
     }
 
     .members {
@@ -28,19 +29,34 @@
       .flex(row, center, center);
 
       .member {
-        width: 30%;
-        background: white;
+        width: 25%;
+        background: @white;
         text-align: center;
         margin: 0px 1rem 0rem 1rem;
+        padding: 1rem;
+        border-radius: 0.6rem;
+        .flex(column, center, center);
 
         .member-intro {
-          padding: 1rem;
+          h3 {
+            margin-top: 1rem;
+            color: @primaryTextColor;
+          }
+
+          p {
+            font-style: italic;
+            color: @grayTextColor;
+            margin-top: 0rem;
+          }
+        }
+
+        .member-bio {
+          display: none;
         }
 
         img {
-          width: 100%;
+          width: 70%;
           display: block;
-          width: 90%;
           margin: 0px auto;
           border-radius: 50%;
         }
