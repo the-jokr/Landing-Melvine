@@ -624,6 +624,12 @@ header .welcome .btn-group .login:hover {
   border-radius: 0.3rem;
   background: #ffffff;
 }
+@media (max-width: 800px) {
+  .container .about-us {
+    width: 90%;
+    padding: 1rem;
+  }
+}
 @media (max-width: 500px) {
   .container .about-us {
     width: 96%;
@@ -640,6 +646,11 @@ header .welcome .btn-group .login:hover {
 @media (max-width: 500px) {
   .container .team {
     width: 96%;
+  }
+}
+@media (max-width: 800px) {
+  .container .team {
+    width: 90%;
   }
 }
 .container .team h1 {
@@ -674,6 +685,11 @@ header .welcome .btn-group .login:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+@media (max-width: 800px) {
+  .container .team .members .member {
+    width: 30%;
+  }
 }
 @media (max-width: 500px) {
   .container .team .members .member {

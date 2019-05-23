@@ -10,6 +10,10 @@
     border-radius: 0.3rem;
     background: @white;
 
+    @media @tablet {
+      width: 90%;
+      padding: 1rem;
+    }
     @media @mobile {
       width: 96%;
     }
@@ -26,6 +30,10 @@
 
     @media @mobile {
       width: 96%;
+    }
+
+    @media @tablet {
+      width: 90%;
     }
 
     h1 {
@@ -50,7 +58,9 @@
         padding: 1rem;
         border-radius: 0.6rem;
         .flex(column, center, center);
-
+        @media @tablet {
+          width: 30%;
+        }
         @media @mobile {
           width: 98%;
           margin: 0rem;
