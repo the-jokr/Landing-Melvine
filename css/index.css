@@ -78,6 +78,15 @@ html {
   box-shadow: 0 2px 1px 0 rgba(51, 51, 51, 0.05);
   z-index: 10;
 }
+@media (max-width: 800px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+  }
+}
 @media (max-width: 500px) {
   .navbar {
     height: auto;
@@ -109,6 +118,13 @@ html {
   height: inherit;
   padding: 1.5rem 3rem;
 }
+@media (max-width: 800px) {
+  .navbar .logo {
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+  }
+}
 @media (max-width: 500px) {
   .navbar .logo {
     padding: 1.5rem;
@@ -128,6 +144,11 @@ html {
 .navbar .nav-menu.open {
   max-height: 400px;
   transition: all 0.35s ease-in-out;
+}
+@media (max-width: 800px) {
+  .navbar .nav-menu {
+    width: 100%;
+  }
 }
 @media (max-width: 500px) {
   .navbar .nav-menu {
@@ -166,6 +187,12 @@ html {
   display: block;
   padding: 2.5rem 2rem;
   white-space: nowrap;
+}
+@media (max-width: 800px) {
+  .navbar .nav-menu li a {
+    padding: 1.5rem 1rem;
+    text-align: center;
+  }
 }
 @media (max-width: 500px) {
   .navbar .nav-menu li a {
@@ -696,11 +723,6 @@ header .welcome .btn-group .login:hover {
     width: 98%;
     margin: 0rem;
     margin-top: 1rem;
-  }
-}
-@media (max-width: 800px) {
-  .container .team .members .member {
-    width: 30%;
   }
 }
 .container .team .members .member .member-intro h3 {
