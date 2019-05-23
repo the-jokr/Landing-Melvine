@@ -698,6 +698,11 @@ header .welcome .btn-group .login:hover {
     margin-top: 1rem;
   }
 }
+@media (max-width: 800px) {
+  .container .team .members .member {
+    width: 30%;
+  }
+}
 .container .team .members .member .member-intro h3 {
   margin-top: 1rem;
   color: #444444;
