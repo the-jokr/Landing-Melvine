@@ -617,6 +617,47 @@ header .welcome .btn-group .login:hover {
   padding-top: 5.5rem;
   font-family: "Montserrat", sans-serif;
 }
+.container .about-us {
+  width: 80%;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 0.3rem;
+  background: #ffffff;
+}
+.container .about-us p {
+  line-height: 1.7rem;
+  font-size: 1.1rem;
+}
+.container .team {
+  width: 80%;
+  margin: 5rem auto;
+}
+.container .team h1 {
+  text-align: center;
+}
+.container .team .members {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.container .team .members .member {
+  width: 30%;
+  background: white;
+  text-align: center;
+  margin: 0px 1rem 0rem 1rem;
+}
+.container .team .members .member .member-intro {
+  padding: 1rem;
+}
+.container .team .members .member img {
+  width: 100%;
+  display: block;
+  width: 90%;
+  margin: 0px auto;
+  border-radius: 50%;
+}
 body {
   background: #edf5fc;
 }
