@@ -642,6 +642,11 @@ header .welcome .btn-group .login:hover {
     width: 96%;
   }
 }
+@media (max-width: 800px) {
+  .container .team {
+    width: 98%;
+  }
+}
 .container .team h1 {
   text-align: center;
   margin: 2rem auto 2rem;
@@ -680,6 +685,11 @@ header .welcome .btn-group .login:hover {
     width: 98%;
     margin: 0rem;
     margin-top: 1rem;
+  }
+}
+@media (max-width: 800px) {
+  .container .team .members .member {
+    width: 30%;
   }
 }
 .container .team .members .member .member-intro h3 {
