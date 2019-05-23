@@ -612,6 +612,115 @@ header .welcome .btn-group .login:hover {
   opacity: 1;
   transition: all 0.4s ease-in-out;
 }
+.container {
+  min-height: 800px;
+  padding-top: 5.5rem;
+  font-family: "Montserrat", sans-serif;
+}
+.container .about-us {
+  width: 80%;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 0.3rem;
+  background: #ffffff;
+}
+@media (max-width: 800px) {
+  .container .about-us {
+    width: 90%;
+    padding: 1rem;
+  }
+}
+@media (max-width: 500px) {
+  .container .about-us {
+    width: 96%;
+  }
+}
+.container .about-us p {
+  line-height: 1.7rem;
+  font-size: 1.1rem;
+}
+.container .team {
+  width: 80%;
+  margin: 5rem auto;
+}
+@media (max-width: 500px) {
+  .container .team {
+    width: 96%;
+  }
+}
+@media (max-width: 800px) {
+  .container .team {
+    width: 90%;
+  }
+}
+.container .team h1 {
+  text-align: center;
+  margin: 2rem auto 2rem;
+}
+.container .team .members {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 500px) {
+  .container .team .members {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 96%;
+    margin: 0rem;
+  }
+}
+.container .team .members .member {
+  width: 25%;
+  background: #ffffff;
+  text-align: center;
+  margin: 0px 1rem 0rem 1rem;
+  padding: 1rem;
+  border-radius: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 800px) {
+  .container .team .members .member {
+    width: 30%;
+  }
+}
+@media (max-width: 500px) {
+  .container .team .members .member {
+    width: 98%;
+    margin: 0rem;
+    margin-top: 1rem;
+  }
+}
+@media (max-width: 800px) {
+  .container .team .members .member {
+    width: 30%;
+  }
+}
+.container .team .members .member .member-intro h3 {
+  margin-top: 1rem;
+  color: #444444;
+}
+.container .team .members .member .member-intro p {
+  font-style: italic;
+  color: #919191;
+  margin-top: 0rem;
+}
+.container .team .members .member .member-bio {
+  display: none;
+}
+.container .team .members .member img {
+  width: 70%;
+  display: block;
+  margin: 0px auto;
+  border-radius: 50%;
+}
 body {
   background: #edf5fc;
 }

@@ -1,0 +1,100 @@
+.container {
+  min-height: 800px;
+  padding-top: 5.5rem;
+  font-family: @primaryFont;
+
+  .about-us {
+    width: 80%;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 0.3rem;
+    background: @white;
+
+    @media @tablet {
+      width: 90%;
+      padding: 1rem;
+    }
+    @media @mobile {
+      width: 96%;
+    }
+
+    p {
+      line-height: 1.7rem;
+      font-size: 1.1rem;
+    }
+  }
+
+  .team {
+    width: 80%;
+    margin: 5rem auto;
+
+    @media @mobile {
+      width: 96%;
+    }
+
+    @media @tablet {
+      width: 90%;
+    }
+
+    h1 {
+      text-align: center;
+      margin: 2rem auto 2rem;
+    }
+
+    .members {
+      margin-bottom: 2rem;
+      .flex(row, center, center);
+      @media @mobile {
+        .flex(column, center, center);
+        width: 96%;
+        margin: 0rem;
+      }
+
+      .member {
+        width: 25%;
+        background: @white;
+        text-align: center;
+        margin: 0px 1rem 0rem 1rem;
+        padding: 1rem;
+        border-radius: 0.6rem;
+        .flex(column, center, center);
+        @media @tablet {
+          width: 30%;
+        }
+        @media @mobile {
+          width: 98%;
+          margin: 0rem;
+          margin-top: 1rem;
+        }
+
+        @media @tablet {
+          width: 30%;
+        }
+
+        .member-intro {
+          h3 {
+            margin-top: 1rem;
+            color: @primaryTextColor;
+          }
+
+          p {
+            font-style: italic;
+            color: @grayTextColor;
+            margin-top: 0rem;
+          }
+        }
+
+        .member-bio {
+          display: none;
+        }
+
+        img {
+          width: 70%;
+          display: block;
+          margin: 0px auto;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}
