@@ -624,6 +624,11 @@ header .welcome .btn-group .login:hover {
   border-radius: 0.3rem;
   background: #ffffff;
 }
+@media (max-width: 500px) {
+  .container .about-us {
+    width: 96%;
+  }
+}
 .container .about-us p {
   line-height: 1.7rem;
   font-size: 1.1rem;
@@ -631,6 +636,11 @@ header .welcome .btn-group .login:hover {
 .container .team {
   width: 80%;
   margin: 5rem auto;
+}
+@media (max-width: 500px) {
+  .container .team {
+    width: 96%;
+  }
 }
 .container .team h1 {
   text-align: center;
@@ -643,6 +653,16 @@ header .welcome .btn-group .login:hover {
   align-items: center;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  .container .team .members {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 96%;
+    margin: 0rem;
+  }
+}
 .container .team .members .member {
   width: 25%;
   background: #ffffff;
@@ -654,6 +674,13 @@ header .welcome .btn-group .login:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+@media (max-width: 500px) {
+  .container .team .members .member {
+    width: 98%;
+    margin: 0rem;
+    margin-top: 1rem;
+  }
 }
 .container .team .members .member .member-intro h3 {
   margin-top: 1rem;

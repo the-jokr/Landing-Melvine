@@ -10,6 +10,10 @@
     border-radius: 0.3rem;
     background: @white;
 
+    @media @mobile {
+      width: 96%;
+    }
+
     p {
       line-height: 1.7rem;
       font-size: 1.1rem;
@@ -19,6 +23,11 @@
   .team {
     width: 80%;
     margin: 5rem auto;
+
+    @media @mobile {
+      width: 96%;
+    }
+
     h1 {
       text-align: center;
       margin: 2rem auto 2rem;
@@ -27,6 +36,11 @@
     .members {
       margin-bottom: 2rem;
       .flex(row, center, center);
+      @media @mobile {
+        .flex(column, center, center);
+        width: 96%;
+        margin: 0rem;
+      }
 
       .member {
         width: 25%;
@@ -36,6 +50,12 @@
         padding: 1rem;
         border-radius: 0.6rem;
         .flex(column, center, center);
+
+        @media @mobile {
+          width: 98%;
+          margin: 0rem;
+          margin-top: 1rem;
+        }
 
         .member-intro {
           h3 {
