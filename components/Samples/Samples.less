@@ -8,6 +8,11 @@
     margin: 3rem auto 0rem;
     .flex(row, center, center);
 
+    @media @tablet {
+      width: 100%;
+      margin: 1rem auto 0rem;
+    }
+
     @media @mobile {
       .flex(column, center, center);
     }
@@ -19,12 +24,23 @@
       margin: 0.4rem auto 0.4rem;
       font-family: @primaryFont;
 
+      @media @tablet {
+        padding: 0px;
+      }
       @media @mobile {
-        max-width: 100%;
+        width: 100%;
+        max-width: 96%;
       }
 
       p {
         font-size: 2rem;
+        padding: 0.5rem;
+        text-align: center;
+
+        @media @tablet {
+          font-size: 1.5rem;
+          width: 100%;
+        }
 
         &:hover {
           cursor: default;
@@ -35,7 +51,6 @@
       > .back {
         color: white;
         height: 320px;
-        padding: 1em 2em;
         background: @primaryBlue;
         border-radius: 5px;
         .flex(row, center, center);

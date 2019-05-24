@@ -11,6 +11,11 @@
   box-shadow: 0 2px 1px 0 rgba(51, 51, 51, 0.05);
   z-index: 10;
 
+  @media @tablet {
+    .flex(column, center, center);
+    height: auto;
+  }
+
   @media @mobile {
     height: auto;
     .flex(column, flex-start, center);
@@ -35,6 +40,12 @@
     height: inherit;
     padding: 1.5rem 3rem;
 
+    @media @tablet {
+      width: 100%;
+      padding: 1rem;
+      text-align: center;
+    }
+
     @media @mobile {
       padding: 1.5rem;
     }
@@ -52,6 +63,10 @@
     &.open {
       max-height: 400px;
       transition: all 0.35s ease-in-out;
+    }
+
+    @media @tablet {
+      width: 100%;
     }
 
     @media @mobile {
@@ -73,7 +88,7 @@
       &:hover,
       &.active {
         border-bottom: 0.35rem solid @primaryBlue;
-        background: lighten(@lightBlue, 10%);
+        background: lighten(@lightBlue, 0.3%);
       }
 
       @media @mobile {
@@ -88,6 +103,11 @@
         display: block;
         padding: 2.5rem 2rem;
         white-space: nowrap;
+
+        @media @tablet {
+          padding: 1.5rem 1rem;
+          text-align: center;
+        }
 
         @media @mobile {
           padding: 1.5rem 1rem;
