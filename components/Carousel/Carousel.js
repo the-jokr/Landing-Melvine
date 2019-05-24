@@ -1,6 +1,7 @@
 class Carousel {
-  constructor(element) {
+  constructor(element, autoSlide) {
     this.element = element;
+    this.autoSlide = autoSlide;
     this.slides = this.element.querySelectorAll(".slide");
     this.currentIndex = 1;
 
@@ -12,6 +13,10 @@ class Carousel {
 
     this.deselect();
     this.setCurrentSlide();
+
+    setInterval(() => {
+      this.next.click();
+    }, 2500);
   }
 
   deselect() {
@@ -50,4 +55,4 @@ class Carousel {
 }
 
 let carousel = document.querySelector(".carousel");
-new Carousel(carousel);
+new Carousel(carousel, true);
