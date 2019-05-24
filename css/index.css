@@ -582,6 +582,7 @@ header .welcome .btn-group .login:hover {
   opacity: 0.3;
   transition: all 0.25s ease-in-out;
   cursor: pointer;
+  color: #2caadc;
   z-index: 3;
 }
 @media (max-width: 500px) {
@@ -594,15 +595,25 @@ header .welcome .btn-group .login:hover {
 .reviews .reviews-wrapper .next {
   right: 6.5rem;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .reviews .reviews-wrapper .next {
     right: 0.5rem;
+  }
+}
+@media (max-width: 500px) {
+  .reviews .reviews-wrapper .next {
+    right: 0.35rem;
     bottom: 0.3rem;
     top: unset;
   }
 }
 .reviews .reviews-wrapper .prev {
   left: 6.5rem;
+}
+@media (max-width: 800px) {
+  .reviews .reviews-wrapper .prev {
+    left: 0.35rem;
+  }
 }
 @media (max-width: 500px) {
   .reviews .reviews-wrapper .prev {
@@ -619,6 +630,11 @@ header .welcome .btn-group .login:hover {
   background: #ffffff;
   position: relative;
   overflow: hidden;
+}
+@media (max-width: 800px) {
+  .reviews .carousel {
+    width: 90%;
+  }
 }
 @media (max-width: 500px) {
   .reviews .carousel {
